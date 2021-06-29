@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Verdadeiro ou Falso</h1>
+    <table class="tabelaSelecao" >
+        <tr>    
+            <td> <form> <input id="elemento1" type="text"> </form> </td>
+            <td> <form> <select id="selecaoDeCondicional"> <option>SELECIONE UMA OPÇÃO</option>
+                <option value="=="   class="comparaIgual">IGUAL</option>  
+                <option value="==="  class="comparaEstritIgual">ESTRITAMENTE IGUAL</option>
+                <option value="!="  class="comparaNaoIgual">DIFERENTE</option>
+                <option value="!==" class="comparaEstritNaoIgual">ESTRITAMENTE DIFERENTE</option>
+            </select> </form> </td>
+            <td> <form> <input id="elemento2" type="text"> </form> </td>
+            <td> <form> <input id="verifica" type="button" value="verificar"> </form> </td>
+        </tr>
+    </table> <br>
+    <table class="tabelaComparacoes">  
+        <tr>
+            <td class="tituloTabela"> Valores </td>
+            <td class="tituloTabela"> Tipo </td>
+            <td class="tituloTabela"> Resultado </td>
+        </tr>
+    </table>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>  
+</body>
+</html>
